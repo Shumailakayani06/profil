@@ -51,8 +51,8 @@ label {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #44719e;
-  margin: 3em;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin: 3em 8em;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   color: white;
 }
 
