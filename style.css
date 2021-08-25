@@ -11,6 +11,10 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+p {
+  margin: 1em;
+}
+
 header {
   background-color: #44719e;
 }
@@ -29,4 +33,30 @@ label {
 
 .right-div img {
   height: 500px;
+}
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-div {
+  display: inline-block;
+  max-width: 500px;
+  margin-left: 2em;
+  padding: 2em;
+}
+
+.right-div {
+  margin-right: 3em;
+}
+
+.left-div h1 {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #44719e;
+  color: white;
 }
