@@ -71,6 +71,27 @@ label {
   margin-bottom: 1em;
 }
 
+@mixin btnBorder($radius: 2px) {
+  border-radius: $radius;
+  border: 5px solid white;
+  background-color: variables.$secondarycolor;
+  color: white;
+}
+
+.btn-div {
+  .button1 {
+    @include btnBorder();
+    height: 50px;
+    width: 100px;
+  }
+
+  .button2 {
+    @include btnBorder();
+    height: 30px;
+    width: 150px;
+  }
+}
+
 footer {
   color: variables.$primaryblack;
 }

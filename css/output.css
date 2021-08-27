@@ -68,6 +68,23 @@ label {
   margin-bottom: 1em;
 }
 
+.btn-div .button1 {
+  border-radius: 2px;
+  border: 5px solid white;
+  background-color: #f5bfdc;
+  color: white;
+  height: 50px;
+  width: 100px;
+}
+.btn-div .button2 {
+  border-radius: 2px;
+  border: 5px solid white;
+  background-color: #f5bfdc;
+  color: white;
+  height: 30px;
+  width: 150px;
+}
+
 footer {
   color: black;
 }
