@@ -1,0 +1,20 @@
+@use "variables";
+
+@mixin fixinContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@mixin btnBorder($radius: 1px) {
+  border-radius: $radius;
+  border: 3px solid variables.$tertiarycolor;
+  background-color: variables.$secondarycolor;
+  color: variables.$tertiarycolor;
+}
+
+@mixin nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

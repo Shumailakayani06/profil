@@ -1,13 +1,8 @@
 @use "variables";
-
-@mixin fixinContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+@use "mixins";
 
 .dreamjob-section {
-  @include fixinContent;
+  @include mixins.fixinContent;
 
   margin: 2em;
   .job-text {

@@ -1,3 +1,4 @@
+@use "mixins";
 @use "variables";
 
 * {
@@ -41,14 +42,8 @@ label {
   max-height: 500px;
 }
 
-@mixin fixinContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .home-section {
-  @include fixinContent;
+  @include mixins.fixinContent;
   background-color: variables.$primaryblack;
   margin: 3em 2em;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
@@ -70,16 +65,9 @@ label {
   margin-bottom: 1em;
 }
 
-@mixin btnBorder($radius: 1px) {
-  border-radius: $radius;
-  border: 3px solid variables.$tertiarycolor;
-  background-color: variables.$secondarycolor;
-  color: variables.$tertiarycolor;
-}
-
 .btn-div {
   .button1 {
-    @include btnBorder();
+    @include mixins.btnBorder;
     height: 50px;
     width: 250px;
     font-size: 18px;
@@ -100,14 +88,8 @@ footer span {
   font-weight: bold;
 }
 
-@mixin nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-div {
-  @include nav;
+  @include mixins.nav;
 
   ul {
     display: flex;
