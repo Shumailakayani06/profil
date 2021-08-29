@@ -1,14 +1,16 @@
 @use "variables";
 @use "mixins";
 
+/* Job page main section */
+
 .dreamjob-section {
   @include mixins.fixinContent;
-
   margin: 2em;
+
   .job-text {
     display: inline-block;
     max-width: 500px;
-    margin-top: 5em;
+    margin-top: 3em;
     max-width: 400px;
     padding: 2em;
 

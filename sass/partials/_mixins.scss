@@ -8,13 +8,24 @@
 
 @mixin btnBorder($radius: 1px) {
   border-radius: $radius;
-  border: 3px solid variables.$tertiarycolor;
+  border: 3px solid variables.$secondarycolor;
   background-color: variables.$secondarycolor;
   color: variables.$tertiarycolor;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
 @mixin nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin logo-sk {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+  color: variables.$tertiarycolor;
+  padding: 0 50px;
+  font-family: variables.$font-logo;
 }
